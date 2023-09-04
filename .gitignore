@@ -456,3 +456,7 @@ $RECYCLE.BIN/
 ##
 # Custom
 ##
+
+# Windows Sandbox
+*.wsb
+*.wsb.start.cmd
