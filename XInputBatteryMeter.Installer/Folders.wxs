@@ -1,0 +1,15 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <StandardDirectory Id="ProgramFiles6432Folder">
+      <Directory Id="INSTALLFOLDER" Name="!(bind.Property.ProductName)">
+        <!-- These Directories are referenced by Heat harvesting when harvesting the XInputBatteryMeter csproj. -->
+        <!-- We need to define them here, or the Wix build will fail, as it won't be able to find the Directories that Heat is trying to reference. -->
+        <Directory Id="XInputBatteryMeter.Binaries" ComponentGuidGenerationSeed="3EA2F4ED-C5FD-409C-9FCF-144AB5ECF085"/>
+        <Directory Id="XInputBatteryMeter.Content" ComponentGuidGenerationSeed="3EA2F4ED-C5FD-409C-9FCF-144AB5ECF085"/>
+        <Directory Id="XInputBatteryMeter.Symbols" ComponentGuidGenerationSeed="3EA2F4ED-C5FD-409C-9FCF-144AB5ECF085"/>
+        <Directory Id="XInputBatteryMeter.Documents" ComponentGuidGenerationSeed="3EA2F4ED-C5FD-409C-9FCF-144AB5ECF085"/>
+        <Directory Id="XInputBatteryMeter.Satellites" ComponentGuidGenerationSeed="3EA2F4ED-C5FD-409C-9FCF-144AB5ECF085"/>
+      </Directory>
+    </StandardDirectory>
+  </Fragment>
+</Wix>
