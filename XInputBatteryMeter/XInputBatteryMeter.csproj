@@ -24,6 +24,18 @@
     <PackageReference Include="SharpDX.XInput" Version="4.2.0" />
   </ItemGroup>
 
+  <!-- Define a target that will add the .exe file to the BuildOutput. -->
+  <!-- Without this, Heat will not harvest the .exe file from the BuildOutput. -->
+  <Target Name="AddAppHostToBuiltProjectOutputGroupOutput" Condition=" '$(UseAppHost)' == 'true' " BeforeTargets="BuiltProjectOutputGroup">
+    <PropertyGroup>
+      <_AddAppHostTargetPath>$([System.IO.Path]::ChangeExtension($(TargetPath), '.exe'))</_AddAppHostTargetPath>
+    </PropertyGroup>
+    <ItemGroup>
+      <BuiltProjectOutputGroupOutput Include="$(_AddAppHostTargetPath)" TargetPath="$(_AddAppHostTargetPath)" CopyToOutputDirectory="PreserveNewest" />
+      <BuiltProjectOutputGroupOutput Include="%(FullPath)" Condition=" '$(AppConfig)' != '' " TargetPath="@(AppConfigFileDestination)" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+  </Target>
+
   <ItemGroup>
     <None Include="..\LICENSE">
       <Pack>True</Pack>
