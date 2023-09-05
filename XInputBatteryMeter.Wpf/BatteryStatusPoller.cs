@@ -4,7 +4,7 @@ using System.Timers;
 
 using SharpDX.XInput;
 
-namespace XInputBatteryMeter;
+namespace XInputBatteryMeter.Wpf;
 
 public class BatteryStatusPoller
 {

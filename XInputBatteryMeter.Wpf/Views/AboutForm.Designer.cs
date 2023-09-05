@@ -1,4 +1,4 @@
-namespace XInputBatteryMeter.Views
+namespace XInputBatteryMeter.Wpf.Views
 {
     partial class AboutForm
     {

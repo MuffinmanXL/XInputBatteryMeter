@@ -3,9 +3,9 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Windows.Forms;
 
-using XInputBatteryMeter.Properties;
+using XInputBatteryMeter.Wpf.Properties;
 
-namespace XInputBatteryMeter.Views;
+namespace XInputBatteryMeter.Wpf.Views;
 
 public partial class AboutForm : Form
 {

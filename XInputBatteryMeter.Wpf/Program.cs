@@ -3,11 +3,11 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-using XInputBatteryMeter.Properties;
+using XInputBatteryMeter.Wpf.Properties;
 
-[assembly: InternalsVisibleTo("XInputBatteryMeter.UnitTests")]
+[assembly: InternalsVisibleTo("XInputBatteryMeter.Wpf.UnitTests")]
 
-namespace XInputBatteryMeter;
+namespace XInputBatteryMeter.Wpf;
 
 /// <summary>Represents the main entry point of the application.</summary>
 internal static class Program

@@ -6,10 +6,10 @@ using AutoUpdaterDotNET;
 
 using SharpDX.XInput;
 
-using XInputBatteryMeter.Properties;
-using XInputBatteryMeter.Views;
+using XInputBatteryMeter.Wpf.Properties;
+using XInputBatteryMeter.Wpf.Views;
 
-namespace XInputBatteryMeter;
+namespace XInputBatteryMeter.Wpf;
 
 public class BatteryMeterApplicationContext : ApplicationContext
 {
