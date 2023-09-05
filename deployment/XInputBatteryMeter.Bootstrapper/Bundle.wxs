@@ -5,8 +5,8 @@
 	<Bundle Name="XInput Battery Meter" Version="1.0.1" Manufacturer="Martin Tracey" UpgradeCode="2d59ec67-b254-4b8c-95e8-71985f28747f">
     <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.RtfLicense">
       <bal:WixStandardBootstrapperApplication
-        LicenseFile="..\Resources\LICENSE.rtf"
-        LogoFile="..\Resources\Icon.png" 
+        LicenseFile="..\..\Resources\LICENSE.rtf"
+        LogoFile="..\..\Resources\Icon.png" 
         ThemeFile="CustomTheme.xml" />
     </BootstrapperApplicationRef>
 	  <Variable Name="InstallFolder" Type="string" Value="[ProgramFilesFolder]XInput Battery Meter" Persisted="yes" />

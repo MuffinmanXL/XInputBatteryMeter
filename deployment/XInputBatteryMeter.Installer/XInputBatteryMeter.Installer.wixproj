@@ -12,7 +12,7 @@
   <PropertyGroup>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
-    <DefineConstants>Debug;AppBinDir=..\XInputBatteryMeter\bin\$(Configuration)\net5.0-windows</DefineConstants>
+    <DefineConstants>Debug;AppBinDir=..\..\XInputBatteryMeter.Wpf\bin\$(Configuration)\net6.0-windows</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Custom_InstallDirDlg.wxs" />
@@ -39,7 +39,7 @@
   </Target>
 
   <Target Name="BeforeBuild">
-    <HeatDirectory Directory="..\XInputBatteryMeter\bin\$(Configuration)\net5.0-windows"
+    <HeatDirectory Directory="..\..\XInputBatteryMeter.Wpf\bin\$(Configuration)\net6.0-windows"
                 PreprocessorVariable="var.AppBinDir"
                 OutputFile="ProductInstallFiles.wxs"
                 ComponentGroupName="BinDirectory"

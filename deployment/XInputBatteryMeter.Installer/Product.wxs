@@ -23,15 +23,15 @@
       <Directory Id="DesktopFolder" Name="Desktop"/>
     </Directory>
 
-    <WixVariable Id="WixUILicenseRtf" Value="..\Resources\LICENSE.rtf" />
-    <WixVariable Id="WixUIDialogBmp" Value="..\Resources\WixUIDialogBmp.bmp" />
-    <WixVariable Id="WixUIBannerBmp" Value="..\Resources\WixUIBannerBmp.bmp" />
-    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER"></Property>
+    <WixVariable Id="WixUILicenseRtf" Value="..\..\Resources\LICENSE.rtf" />
+    <WixVariable Id="WixUIDialogBmp" Value="..\..\Resources\WixUIDialogBmp.bmp" />
+    <WixVariable Id="WixUIBannerBmp" Value="..\..\Resources\WixUIBannerBmp.bmp" />
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER"/>
     <UIRef Id="Custom_InstallDir"/>
   </Fragment>
 
   <Fragment>
-    <Icon Id="ControllerIcon.ico" SourceFile="..\Resources\ControllerIcon.ico"/>
+    <Icon Id="ControllerIcon.ico" SourceFile="..\..\Resources\ControllerIcon.ico"/>
     <DirectoryRef Id="DesktopFolder">
       <Component Id="DesktopShortcut" Guid="6FFFACFF-742B-487F-B9DD-0B541F066C8C">
         <Condition>INSTALLSHORTCUT</Condition>
